@@ -1,0 +1,33 @@
+
+{
+  "categories": [],
+  "products": [
+    {
+      "id": "1",
+      "category": "electronics",
+      "name": "light",
+      "display_name": "year",
+      "description": "he travel longdistances"
+    },
+    {
+      "id": "4",
+      "name": "Brakesss",
+      "displayname": "Brake pasds",
+      "description": "Fibers"
+    },
+    {
+      "id": "2",
+      "category": "electronics",
+      "name": "light",
+      "display_name": "year",
+      "description": "he travel longdistances"
+    },
+    {
+      "id": "3",
+      "category": "electronics",
+      "name": "cool",
+      "display_name": "cold",
+      "description": "chill"
+    }
+  ]
+}
