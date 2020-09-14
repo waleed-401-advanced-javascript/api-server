@@ -6,7 +6,8 @@
 ## Project: Api server
 
 ### Author: Waleed Farraj
-version 0.99 open Alpha .
+<!-- version 0.99 open Alpha . -->
+version 2 routes and middleware added . 
 ### Links and Resources
 
 n/a
@@ -14,9 +15,16 @@ n/a
 ### Setup
 
 * json-server required
+* npm install jest --save-dev
+* npm install eslint --save-dev
+* npm i dotenv 
+* npm i express
 
 #### How to initialize/run your application :
-* json-server --watch ./data/db.json 
+* json-server --watch ./data/db.json .(Outdated after patch 2.)
+#####  patch 2 
+* node index.js
+
 
 
 #### Tests
