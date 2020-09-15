@@ -19,6 +19,8 @@ n/a
 * npm install eslint --save-dev
 * npm i dotenv 
 * npm i express
+* npm i bodyparser
+* npm i supertest
 
 #### How to initialize/run your application :
 * json-server --watch ./data/db.json .(Outdated after patch 2.)
@@ -33,10 +35,11 @@ No tests yet
 
 #### UML
 
-![UML1](Assets/1.png)
+<!-- ![UML1](Assets/1.png) -->
+![UML1](Assets/2.png)
 
 ---
 ### swagger hub-link
 
-[swagger](https://app.swaggerhub.com/apis/waleedfarraj/api-server/0.1)
+[swagger](https://app.swaggerhub.com/apis/waleedfarraj/api-server-2/0.1#/default/put_categories_1)
 
