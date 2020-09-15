@@ -6,38 +6,6 @@ const mockRequest = supertest(server);
 
 describe('category route', ()=> {
     
-    it('Check POST request for categories route to send notfound', () => {
-
-        let record = {
-            name: 'to',
-            display_name: 'be',
-            description: 'or',
-            category: 'not to be',
-
-        };
-        return mockRequest
-            .post('/catagories')
-            .send(record)
-            .then(results => {
-                expect(results.status).toBe(404);
-                expect(results.body).toStrictEqual("error : Not Found");
-            });
-    });
-    it('Check status code 200 for categories route and update product by id', () => {
-        let record = {
-            name: 'to',
-            display_name: 'be',
-            description: 'or',
-            category: 'not to be',
-            id: 1,
-        };
-        return mockRequest.put('/categories/1')
-            .send(record)
-            .then(results => {
-                expect(results.status).toBe(200);
-                expect(results.body).toStrictEqual(record);
-            });
-    });
     
 
     
@@ -95,39 +63,7 @@ describe('category route', ()=> {
 });
 describe('products route', ()=> {
 
-    it('Check POST request for products route to send body', () => {
-
-        let record = {
-            name: 'to',
-            display_name: 'be',
-            description: 'or',
-            category: 'not to be'
-        };
-        return mockRequest
-            .post('/products')
-            .send(record)
-            .then(results => {
-                expect(results.status).toBe(500);
-                expect(results.body).toBeTruthy(record);
-            });
-    });
     
-    it('Check status code 200 for products route and update product by id', () => {
-        let record = {
-            name: 'to',
-            display_name: 'be',
-            description: 'or',
-            category: 'not to be',
-            id: 1,
-        };
-        return mockRequest
-            .put('/products/1')
-            .send(record)
-            .then(results => {
-                expect(results.status).toBe(200);
-                expect(results.body).toStrictEqual(record);
-            });
-    });
     
 
     it('should respond with 200 for get ', ()=>{

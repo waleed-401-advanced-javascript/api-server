@@ -7,7 +7,8 @@
 
 ### Author: Waleed Farraj
 <!-- version 0.99 open Alpha . -->
-version 2 routes and middleware added . 
+<!-- version 2 routes and middleware added .  -->
+version 3 routes are modulurized and the api  is connected to a local mongo db.
 ### Links and Resources
 
 n/a
@@ -21,25 +22,28 @@ n/a
 * npm i express
 * npm i bodyparser
 * npm i supertest
+* npm i mongoose
 
 #### How to initialize/run your application :
 * json-server --watch ./data/db.json .(Outdated after patch 2.)
 #####  patch 2 
 * node index.js
+Then you can use swagger inspector to test  base url is 
 
 
 
 #### Tests
 
-No tests yet
+npm test
 
 #### UML
 
 <!-- ![UML1](Assets/1.png) -->
-![UML1](Assets/2.png)
+<!-- ![UML1](Assets/2.png) -->
+![UML3](Assets/3.png)
 
 ---
 ### swagger hub-link
 
-[swagger](https://app.swaggerhub.com/apis/waleedfarraj/api-server-2/0.1#/default/put_categories_1)
+[swagger](https://app.swaggerhub.com/apis/waleedfarraj/api-server-3/0.1#/default/post_api_v1_products)
 
