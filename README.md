@@ -20,15 +20,17 @@ n/a
 * npm install eslint --save-dev
 * npm i dotenv 
 * npm i express
-* npm i bodyparser
+* npm i body-parser
 * npm i supertest
 * npm i mongoose
-
+* npm i cors
+* npm i morgan
+* npm i @code-fellows/supergoose
 #### How to initialize/run your application :
 * json-server --watch ./data/db.json .(Outdated after patch 2.)
 #####  patch 2 
 * node index.js
-Then you can use swagger inspector to test  base url is 
+Then you can use swagger inspector to test  base url is http://localhost:port/api/v1/ .
 
 
 

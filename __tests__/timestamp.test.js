@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const timeStampMiddleware = require('../lib/middleware/timestamp.js');
 
 describe('it is getting the date and function is running', ()=> {

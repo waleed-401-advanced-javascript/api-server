@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const { server }  = require('../lib/server.js');
 
 const supertest = require('supertest');
@@ -11,7 +12,7 @@ describe('category route', ()=> {
     
 
     it('should respond with 200 for get ', ()=>{
-        return mockRequest.get('/categories').then(result=>{
+        return mockRequest.get('/categories').then(()=>{
             expect(res.status).toBe(200);
         }).catch(err=> {
             console.log(err);

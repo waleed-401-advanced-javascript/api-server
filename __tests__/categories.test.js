@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 'use strict'
 const { server } = require('../lib/server');
 const supergoose = require('@code-fellows/supergoose');
