@@ -1,8 +1,9 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "api-server",
-    "version": "0.1"
+    "description": "defaultDescription",
+    "version": "0.1",
+    "title": "defaultTitle"
   },
   "paths": {
     "/categories/1": {
@@ -19,7 +20,7 @@
             "name": "body",
             "required": false,
             "schema": {
-              "$ref": "#/definitions/Model0"
+              "$ref": "#/definitions/Model4"
             },
             "x-examples": {
               "application/json": " {\" name\":\" to\",\r\n            \"display_name\": \"be\",\r\n            \"description\": \"or\",\r\n            \"category\":\" not to be that \"}"
@@ -30,7 +31,7 @@
           "200": {
             "description": "Definition generated from Swagger Inspector",
             "schema": {
-              "$ref": "#/definitions/Model3"
+              "$ref": "#/definitions/Model6"
             }
           }
         }
@@ -50,7 +51,7 @@
             "name": "body",
             "required": false,
             "schema": {
-              "$ref": "#/definitions/Model2"
+              "$ref": "#/definitions/Model5"
             },
             "x-examples": {
               "application/json": "{\"name\":\"potato\"}"
@@ -59,9 +60,140 @@
         ],
         "responses": {
           "200": {
-            "description": "it deletes by id",
+            "description": "Definition generated from Swagger Inspector",
             "schema": {
-              "$ref": "#/definitions/Model6"
+              "$ref": "#/definitions/Model9"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/categories/5f60eabe512b250399bc715c": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Definition generated from Swagger Inspector",
+            "schema": {
+              "$ref": "#/definitions/Model12"
+            }
+          }
+        }
+      },
+      "put": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/Model0"
+            },
+            "x-examples": {
+              "application/json": "{\"name\":\"ich trinke\",\n    \"description\":\"kafee\"\n}"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Definition generated from Swagger Inspector",
+            "schema": {
+              "$ref": "#/definitions/Model11"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/products": {
+      "post": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/Model3"
+            },
+            "x-examples": {
+              "application/json": "{\"name\":\"light\",\n    \"category\":\"electronic\",\n    \"description\":\"glows\",\n    \"price\":2,\n    \"inStock\":5\n}"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Definition generated from Swagger Inspector",
+            "schema": {
+              "$ref": "#/definitions/Model14"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/products/5f60f67b5b8ba0061dc38763": {
+      "delete": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/Model1"
+            },
+            "x-examples": {
+              "application/json": "{\"name\":\"light\",\n    \"category\":\"electronic\",\n    \"description\":\"glows\",\n    \"price\":2,\n    \"inStock\":5\n}"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Definition generated from Swagger Inspector",
+            "schema": {
+              "$ref": "#/definitions/Model16"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/{param0}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "param0",
+            "in": "path",
+            "description": "Example values form path are: 'categories' and 'products'",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Definition generated from Swagger Inspector",
+            "schema": {
+              "$ref": "#/definitions/Model13"
             }
           }
         }
@@ -69,14 +201,66 @@
     }
   },
   "definitions": {
+    "Model0": {
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      }
+    },
     "Model1": {
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "price": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "inStock": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "Model2": {
       "properties": {
         "name": {
           "type": "string"
         }
       }
     },
-    "Model0": {
+    "Model3": {
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "price": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "inStock": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "Model4": {
       "properties": {
         " name": {
           "type": "string"
@@ -92,7 +276,7 @@
         }
       }
     },
-    "Model2": {
+    "Model5": {
       "properties": {
         "name": {
           "type": "string"
@@ -119,14 +303,14 @@
         }
       }
     },
-    "Model3": {
+    "Model6": {
       "properties": {
         "newRecord": {
           "$ref": "#/definitions/NewRecord"
         }
       }
     },
-    "Model4": {
+    "Model7": {
       "properties": {
         "name": {
           "type": "string"
@@ -157,7 +341,7 @@
         }
       }
     },
-    "Model5": {
+    "Model8": {
       "properties": {
         "count": {
           "type": "integer",
@@ -191,10 +375,163 @@
         }
       }
     },
-    "Model6": {
+    "Model9": {
       "properties": {
         "deleted": {
           "$ref": "#/definitions/Deleted"
+        }
+      }
+    },
+    "Model11": {
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "__v": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "Array": {
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "__v": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "Model12": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Array"
+      }
+    },
+    "Model13_Array": {
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "__v": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "Model13": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Model13_Array"
+      }
+    },
+    "Model14_Array": {
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "price": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "inStock": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "__v": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "Model14": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Model14_Array"
+      }
+    },
+    "Model15_Array": {
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "price": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "inStock": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "__v": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "Model16": {
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "price": {
+          "type": "number",
+          "format": "double"
+        },
+        "inStock": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "__v": {
+          "type": "integer",
+          "format": "int32"
         }
       }
     }
